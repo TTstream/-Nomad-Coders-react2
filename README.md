@@ -39,3 +39,25 @@ useEffect(() => {
 console.log("I run when 'keyword & counter' changes.")
 }, [keyword, counter]);
 -> 2개도 가능
+
+## `Cleanup 사용법`
+
+```javascript
+function Hello() {
+  // Cleanup 1번째 방법
+  useEffect(() => {
+    console.log("hi :)");
+    return () => console.log("bye :(");
+  }, []);
+
+  // Cleanup 2번째 방법
+  useEffect(function () {
+    console.log("hi :)");
+    return function () {
+      console.log("bye :(");
+    };
+  }, []);
+
+  return <h1>Hello</h1>;
+}
+```
