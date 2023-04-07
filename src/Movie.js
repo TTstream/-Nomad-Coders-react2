@@ -30,7 +30,7 @@ function Movie() {
               <h2>{movie.title}</h2>
               <p>{movie.summary}</p>
               <ul>
-                {movie.genres.map((g) => (
+                {movie.genres?.map((g) => (
                   <li key={g}>{g}</li>
                 ))}
               </ul>
