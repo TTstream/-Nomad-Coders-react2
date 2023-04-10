@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.85fcbbfb.js",
-    "index.html": "/index.html",
-    "main.85fcbbfb.js.map": "/static/js/main.85fcbbfb.js.map"
+    "main.js": "/ttstream.github.io/Nomad-Coders-react2/static/js/main.84f6a554.js",
+    "index.html": "/ttstream.github.io/Nomad-Coders-react2/index.html",
+    "main.84f6a554.js.map": "/ttstream.github.io/Nomad-Coders-react2/static/js/main.84f6a554.js.map"
   },
   "entrypoints": [
-    "static/js/main.85fcbbfb.js"
+    "static/js/main.84f6a554.js"
   ]
 }
