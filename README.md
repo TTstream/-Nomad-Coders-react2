@@ -43,12 +43,14 @@ console.log("I run when 'keyword & counter' changes.")
 ```javascript
 // useEffect로 영화 API 받아오는 법 예시
 function Home() {
+  const [movies, setMovies] = useState([]);
   const getMovies = async () => {
     const json = await (
       await fetch(
         `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year`
       )
     ).json();
+    setMovies(json.data.movies); // 영화 API 데이터 넣기
   };
 
   useEffect(() => {
